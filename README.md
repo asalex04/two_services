@@ -6,7 +6,7 @@ This repository is created as test task
 ### Start servers 
 ```
 $ npm install
-$ npm init
+$ npm run init
 $ npm start
 ```
 

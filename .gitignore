@@ -1,0 +1,6 @@
+users/dist
+/node_modules
+users/node_modules
+historyActionsUsers/node_modules
+
+/.idea

@@ -4,9 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "cd ./users && nest build",
+    "init": "concurrently \"npm install --prefix users\" \"npm install --prefix historyActionsUsers\"",
+    "history": "npm run start --prefix historyActionsUsers",
+    "start:prod": "cd ./users && node dist/main",
+    "start": "concurrently \"npm run history\" \"cd ./users && npm start\""
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.1"
+  }
 }
